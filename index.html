@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="taqueria.png" />
+
+  <!-- SEO Técnico -->
+  <title>Taquería KM 243 — El Sabor de la Carretera | Tacos, Hamburguesas & Más</title>
+  <meta name="description" content="Taquería KM 243, el lugar más sabroso de la carretera. Tacos al pastor, hamburguesas artesanales, combos familiares y mucho más. ¡Pídenos por WhatsApp!" />
+  <meta name="keywords" content="taquería km 243, tacos al pastor, hamburguesas artesanales, taquería carretera, comida mexicana, tacos frescos, taquería económica" />
+  <meta name="author" content="Taquería KM 243" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="restaurant" />
+  <meta property="og:title"       content="Taquería KM 243 — El Sabor de la Carretera" />
+  <meta property="og:description" content="Tacos al pastor, hamburguesas artesanales y combos a precios increíbles. ¡Visítanos en el KM 243!" />
+  <meta property="og:url"         content="https://taqueriaKM243.com" />
+  <meta property="og:locale"      content="es_MX" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Lilita+One&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ================================
+     LOADER
+================================ -->
+<div id="loader" aria-hidden="true">
+  <img src="taqueria.png" alt="" class="loader-logo" />
+  <div class="loader-bar-wrap">
+    <div class="loader-bar" id="loader-bar"></div>
+  </div>
+  <p class="loader-text">Cargando el sabor…</p>
+</div>
+
+<!-- ================================
+     MENÚ MÓVIL
+================================ -->
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <button id="menu-close" class="mobile-menu-close" aria-label="Cerrar menú">✕</button>
+  <a href="#menu">🌮 Menú</a>
+  <a href="#beneficios">⭐ Nosotros</a>
+  <a href="#servicios">🕐 Horarios</a>
+  <a href="#contacto">📍 Ubicación</a>
+</div>
+
+<!-- ================================
+     NAVBAR
+================================ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#" class="navbar-brand" aria-label="Ir al inicio">
+    <img src="taqueria.png" alt="Logo Taquería KM 243" />
+    Taquería KM 243
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#menu">Menú</a></li>
+    <li><a href="#beneficios">Nosotros</a></li>
+    <li><a href="#servicios">Horarios</a></li>
+    <li><a href="#contacto">Ubicación</a></li>
+    <li>
+      <a href="https://wa.me/528134214402?text=¡Hola!%20Quiero%20ordenar%20🌮"
+         target="_blank" rel="noopener" class="nav-cta">
+        ¡Pedir Ahora!
+      </a>
+    </li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ================================
+     HERO — Full Screen
+================================ -->
+<header class="hero" id="inicio">
+
+  <!-- Marca de agua centrada -->
+  <div class="hero-watermark" aria-hidden="true">
+    <img src="taqueria.png" alt="" />
+  </div>
+
+  <!-- Gradiente radial sutil -->
+  <div class="hero-gradient" aria-hidden="true"></div>
+
+  <!-- Partículas JS -->
+  <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+
+  <!-- Doodles decorativos -->
+  <span class="hero-doodle" style="top:12%; left:6%;"  aria-hidden="true">🌶️</span>
+  <span class="hero-doodle" style="top:18%; right:8%;" aria-hidden="true">🍋</span>
+  <span class="hero-doodle" style="bottom:20%; left:5%;" aria-hidden="true">🌮</span>
+  <span class="hero-doodle" style="bottom:28%; right:6%;" aria-hidden="true">🔥</span>
+
+  <!-- Contenido centrado -->
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      La parada obligatoria del KM 243
+    </div>
+
+    <h1 class="hero-title">
+      <span class="word">¡El</span>
+      <span class="word gold">Sabor</span>
+      <span class="word">Que</span>
+      <span class="word">Te</span>
+      <span class="word gold">Mueve!</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Tacos, hamburguesas artesanales, burritos y alitas.
+      Todo fresco, todo sabroso, todo hecho con amor. 🏁
+    </p>
+
+    <div class="hero-ctas">
+      <a href="https://wa.me/528134214402?text=¡Hola!%20Quiero%20hacer%20mi%20pedido%20🌮"
+         target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" width="18" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.523 5.82L.057 23.862l6.197-1.427A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.626 0 11.999 0zm.001 21.818a9.801 9.801 0 01-4.99-1.366l-.358-.213-3.677.846.873-3.576-.233-.368A9.818 9.818 0 012.18 12C2.18 6.57 6.57 2.18 12 2.18c5.43 0 9.818 4.39 9.818 9.82 0 5.43-4.39 9.818-9.818 9.818z"/></svg>
+        Pedir por WhatsApp
+      </a>
+      <a href="#menu" class="btn btn-outline">Ver el Menú →</a>
+    </div>
+
+  </div>
+
+</header>
+
+<!-- ================================
+     STATS BAR
+================================ -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-num" data-target="10">0</span>
+      <span class="stat-label">+ Años de sabor</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="15000">0</span>
+      <span class="stat-label">+ Clientes felices</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="11">0</span>
+      <span class="stat-label">Platillos únicos</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="100">0</span>
+      <span class="stat-label">% Ingredientes frescos</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================================
+     MENÚ
+================================ -->
+<section class="section-menu" id="menu">
+  <div class="section-header">
+    <div class="section-tag">🌮 Lo que tenemos para ti</div>
+    <br/><br/>
+    <h2 class="section-title">Nuestro Menú</h2>
+  </div>
+
+  <!-- Filtros de categoría -->
+  <div class="menu-filters reveal fade-up">
+    <button class="menu-filter active" data-cat="all">🍽️ Todo</button>
+    <button class="menu-filter" data-cat="tacos">🌮 Tacos</button>
+    <button class="menu-filter" data-cat="especialidades">⭐ Especialidades</button>
+    <button class="menu-filter" data-cat="hamburguesas">🍔 Hamburguesas</button>
+    <button class="menu-filter" data-cat="burritos">🫔 Burritos</button>
+    <button class="menu-filter" data-cat="extras">🍟 Extras</button>
+  </div>
+
+  <div class="menu-grid">
+
+    <!-- TACOS -->
+    <article class="menu-card reveal fade-up" data-cat="tacos">
+      <img src="comida (9).jpg" alt="Taco Individual" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Tacos</span>
+        <h3 class="menu-card-name">Taco Individual</h3>
+        <p class="menu-card-desc">El clásico que no falla. Carne jugosa en tortilla recién hecha con cilantro y cebolla.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">$27</span>
+          <span class="menu-card-price-alt">Con queso $30</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="tacos" style="transition-delay:.08s">
+      <img src="comida (2).jpg" alt="Orden de Tacos" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Tacos</span>
+        <h3 class="menu-card-name">Orden de Tacos</h3>
+        <p class="menu-card-desc">La orden completa para no quedarte con las ganas. ¡Salsas ilimitadas incluidas!</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">$135</span>
+          <span class="menu-card-price-alt">Con queso $150</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ESPECIALIDADES -->
+    <article class="menu-card reveal fade-up" data-cat="especialidades" style="transition-delay:.16s">
+      <img src="comida (3).jpg" alt="Gringa" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Especialidades</span>
+        <h3 class="menu-card-name">Gringa</h3>
+        <p class="menu-card-desc">Tortilla de harina con carne al trompo y queso derretido. Pecado delicioso.</p>
+        <div class="menu-card-price">$65</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="especialidades" style="transition-delay:.24s">
+      <img src="comida (1).jpg" alt="Campechana" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Especialidades</span>
+        <h3 class="menu-card-name">Campechana</h3>
+        <p class="menu-card-desc">Carne con queso derretido, guacamole fresco y totopos crujientes. ¡Un festival de sabores!</p>
+        <div class="menu-card-price">$70</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="especialidades" style="transition-delay:.32s">
+      <img src="comida (6).jpg" alt="Pirata" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Especialidades</span>
+        <h3 class="menu-card-name">Pirata</h3>
+        <p class="menu-card-desc">Tostada crujiente con carne asada, queso, crema y guacamole. ¡Muerde con cuidado!</p>
+        <div class="menu-card-price">$70</div>
+      </div>
+    </article>
+
+    <!-- HAMBURGUESAS -->
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" style="transition-delay:.08s">
+      <img src="comida (7).jpg" alt="Hamburguesa Doble Todo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesas</span>
+        <h3 class="menu-card-name">Hamburguesa Doble Todo</h3>
+        <p class="menu-card-desc">Doble carne, doble queso, tocino, jamón, chile y todas las salsas. La más bestia del menú.</p>
+        <div class="menu-card-price">$185</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" style="transition-delay:.16s">
+      <img src="comida (10).jpg" alt="Hamburguesa de Pollo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesas</span>
+        <h3 class="menu-card-name">Hamburguesa de Pollo</h3>
+        <p class="menu-card-desc">Pechuga jugosa, lechuga, tomate y mayonesa especial de la casa. Favorita del equipo.</p>
+        <div class="menu-card-price">$150</div>
+      </div>
+    </article>
+
+    <!-- BURRITOS -->
+    <article class="menu-card reveal fade-up" data-cat="burritos" style="transition-delay:.08s">
+      <img src="comida (8).jpg" alt="Burrito de Trompo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Burritos</span>
+        <h3 class="menu-card-name">Burrito de Trompo</h3>
+        <p class="menu-card-desc">Tortilla de harina grandota rellena de carne al trompo, frijoles, queso y guacamole.</p>
+        <div class="menu-card-price">$125</div>
+      </div>
+    </article>
+
+    <!-- EXTRAS -->
+    <article class="menu-card reveal fade-up" data-cat="extras" style="transition-delay:.08s">
+      <img src="comida (11).jpg" alt="Papa Asada Especial Extra" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Papa Asada</span>
+        <h3 class="menu-card-name">Papa Asada Especial Extra</h3>
+        <p class="menu-card-desc">Queso Asadero, Queso Cheddar, Jamón, Mantequilla, Crema y Carne Asada o Mixta.</p>
+        <div class="menu-card-price">$140</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" style="transition-delay:.16s">
+      <img src="comida (4).jpg" alt="Papas Especiales" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Papas a la Francesa</span>
+        <h3 class="menu-card-name">Papas Especiales</h3>
+        <p class="menu-card-desc">Papas doradas con boneless y queso amarillo. El acompañamiento que siempre se acaba primero.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">$80</span>
+          <span class="menu-card-price-alt">Orden sencilla $50</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" style="transition-delay:.24s">
+      <img src="comida (5).jpg" alt="Alitas" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Alitas / Boneless</span>
+        <h3 class="menu-card-name">Alitas o Boneless</h3>
+        <p class="menu-card-desc">Crujientes y bañadas en salsa. ¡Para compartir o para no compartir, eso es decisión tuya!</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">desde $120</span>
+          <span class="menu-card-price-alt">500g desde $190</span>
+        </div>
+      </div>
+    </article>
+
+
+  </div>
+</section>
+
+<!-- ================================
+     BENEFICIOS
+================================ -->
+<section class="section-benefits" id="beneficios">
+  <div class="section-header">
+    <div class="section-tag section-tag-invert">⭐ ¿Por qué elegirnos?</div>
+    <br/><br/>
+    <h2 class="section-title section-title-invert">¡La Diferencia Se Nota!</h2>
+  </div>
+
+  <div class="benefits-grid">
+
+    <div class="benefit-card reveal scale-in">
+      <span class="benefit-icon">🌶️</span>
+      <div class="benefit-title">Salsas Artesanales</div>
+      <p class="benefit-desc">Receta secreta de la abuela. Tatemadas y molidas a mano, no de botella.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.08s">
+      <span class="benefit-icon">🥩</span>
+      <div class="benefit-title">Carne Fresquísima</div>
+      <p class="benefit-desc">Sin congelados. Marinamos cada noche para que el sabor llegue a otro nivel.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.16s">
+      <span class="benefit-icon">🫓</span>
+      <div class="benefit-title">Tortillas a Mano</div>
+      <p class="benefit-desc">Hechas al momento, calientitas y gruesas para aguantar doble taco. ¡Como debe ser!</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.24s">
+      <span class="benefit-icon">💰</span>
+      <div class="benefit-title">Precios Increíbles</div>
+      <p class="benefit-desc">Calidad de restaurante con precio de taquería. Aquí el bolsillo también disfruta.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.32s">
+      <span class="benefit-icon">🚀</span>
+      <div class="benefit-title">Servicio Express</div>
+      <p class="benefit-desc">Tu taco listo en minutos. Porque el hambre no espera y nosotros tampoco.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.4s">
+      <span class="benefit-icon">❤️</span>
+      <div class="benefit-title">Hecho Con Amor</div>
+      <p class="benefit-desc">Familia cocinando para familias. Cada platillo lleva la sazón de años de tradición.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================
+     SERVICIOS & HORARIOS
+================================ -->
+<section class="section-services" id="servicios">
+  <div class="section-header">
+    <div class="section-tag" style="background:#D97706;color:#1C1001;">🕐 Cómo trabajamos</div>
+    <br/><br/>
+    <h2 class="section-title section-title-invert">Horarios & Servicios</h2>
+  </div>
+
+  <div class="services-inner" style="max-width:1100px;margin:0 auto;">
+
+    <!-- Tarjetas de servicio -->
+    <div class="services-cards">
+
+      <div class="service-item reveal fade-left">
+        <span class="service-item-icon">🏠</span>
+        <div class="service-item-title">Comer en el Local</div>
+        <p class="service-item-text">Mesas cómodas, ambiente relajado y la mejor vibra mexicana para que disfrutes sin prisa.</p>
+      </div>
+
+      <div class="service-item reveal fade-left" style="transition-delay:.1s">
+        <span class="service-item-icon">🛵</span>
+        <div class="service-item-title">Pedido para Llevar</div>
+        <p class="service-item-text">Llama o manda WhatsApp, prepara tu pedido y pásalo a recoger. Rápido y sencillo.</p>
+      </div>
+
+      <div class="service-item reveal fade-left" style="transition-delay:.2s">
+        <span class="service-item-icon">🎊</span>
+        <div class="service-item-title">Eventos & Grupos</div>
+        <p class="service-item-text">Cotizamos combos especiales para cumpleaños, reuniones de trabajo o fiestas familiares.</p>
+      </div>
+
+      <div class="service-item reveal fade-left" style="transition-delay:.3s">
+        <span class="service-item-icon">📍</span>
+        <div class="service-item-title">Zona de Cobertura</div>
+        <p class="service-item-text">Estamos sobre la carretera principal en el KM 243. Fácil acceso y estacionamiento propio.</p>
+      </div>
+
+    </div>
+
+    <!-- Horarios -->
+    <div class="reveal fade-right">
+      <div class="section-tag" style="background:#FCD34D;color:#1C1001;margin-bottom:20px;display:inline-block;">📅 Horario de atención</div>
+      <div class="horarios-table sticker">
+        <div class="horarios-row header">
+          <span>Día</span>
+          <span>Horario</span>
+        </div>
+        <div class="horarios-row">
+          <span class="dia">Lunes — Viernes</span>
+          <span class="hora">12:00 pm — 11:00 pm</span>
+        </div>
+        <div class="horarios-row">
+          <span class="dia">Sábado</span>
+          <span class="hora">11:00 am — 12:00 am</span>
+        </div>
+        <div class="horarios-row">
+          <span class="dia">Domingo</span>
+          <span class="hora">11:00 am — 10:00 pm</span>
+        </div>
+        <div class="horarios-row" style="background:#FEF3C7; font-size:.85rem; color:#78350F;">
+          <span>⚡ ¡Sin reservación!</span>
+          <span>Llega y disfruta</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================
+     RESEÑAS
+================================ -->
+<section class="section-reviews" id="resenas">
+  <div class="section-header">
+    <div class="section-tag">⭐ Lo que dicen nuestros clientes</div>
+    <br/><br/>
+    <h2 class="section-title">Reseñas <em>Reales</em></h2>
+  </div>
+
+  <div class="reviews-grid">
+
+    <div class="review-card reveal">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <p class="review-text">"Los mejores tacos de la zona, sin duda. La carne al trompo es increíble y las salsas son únicas. Fui con mi familia y todos quedamos encantados. ¡Ya es nuestro lugar favorito para los fines de semana!"</p>
+      <div class="review-author">
+        <div class="review-avatar">MG</div>
+        <div>
+          <div class="review-name">María G.</div>
+          <div class="review-source">
+            <svg viewBox="0 0 24 24" width="14" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Google Maps
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.1s">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <p class="review-text">"Fui por primera vez y quedé enamorado del lugar. La hamburguesa doble todo es una bestia, enorme y deliciosa. El servicio súper rápido y amable. Tiene área de juegos para los niños, lo cual es un plus enorme. ¡100% recomendado!"</p>
+      <div class="review-author">
+        <div class="review-avatar">CR</div>
+        <div>
+          <div class="review-name">Carlos R.</div>
+          <div class="review-source">
+            <svg viewBox="0 0 24 24" width="14" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Google Maps
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.2s">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <p class="review-text">"Las alitas están de otro nivel, y las papas especiales son lo mejor que he probado en mucho tiempo. El ambiente es muy agradable con buena música. Siempre que paso por el KM 243 es parada obligatoria. ¡La gringa también está espectacular!"</p>
+      <div class="review-author">
+        <div class="review-avatar">AL</div>
+        <div>
+          <div class="review-name">Ana L.</div>
+          <div class="review-source">
+            <svg viewBox="0 0 24 24" width="14" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Google Maps
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.3s">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <p class="review-text">"Excelente taquería, calidad y precio insuperables. Los burritos son enormes y muy bien preparados. El personal es muy atento y el lugar está siempre limpio. Ya lo recomendé con todos mis conocidos. ¡Sigan así!"</p>
+      <div class="review-author">
+        <div class="review-avatar">RS</div>
+        <div>
+          <div class="review-name">Roberto S.</div>
+          <div class="review-source">
+            <svg viewBox="0 0 24 24" width="14" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Google Maps
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center; margin-top:40px;">
+    <a href="https://maps.app.goo.gl/2gXUcQhJ2XKgs52S8" target="_blank" rel="noopener" class="btn btn-outline" style="color:var(--cafe); border-color:rgba(61,28,2,.25);">
+      Ver todas las reseñas en Google →
+    </a>
+  </div>
+</section>
+
+<!-- ================================
+     CONTACTO & MAPA
+================================ -->
+<section class="section-contact" id="contacto">
+  <div class="section-header">
+    <div class="section-tag">📍 Encuéntranos</div>
+    <br/><br/>
+    <h2 class="section-title">Ubicación & Contacto</h2>
+  </div>
+
+  <div class="contact-inner">
+
+    <!-- Formulario -->
+    <div>
+      <form class="contact-form sticker-lg" id="contact-form" novalidate>
+        <h3 class="form-title">¡Mándanos un mensaje! 💬</h3>
+
+        <div class="form-group">
+          <label class="form-label" for="nombre">Nombre</label>
+          <input class="form-input" type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="telefono">Teléfono / WhatsApp</label>
+          <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="asunto">Asunto</label>
+          <input class="form-input" type="text" id="asunto" name="asunto" placeholder="Ej. Cotización para evento" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="mensaje">Mensaje</label>
+          <textarea class="form-textarea" id="mensaje" name="mensaje" placeholder="Cuéntanos en qué te podemos ayudar..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center; font-size:1rem;">
+          Enviar Mensaje 🚀
+        </button>
+      </form>
+    </div>
+
+    <!-- Info + Mapa -->
+    <div style="display:flex; flex-direction:column; gap:24px;">
+
+      <!-- Info de contacto -->
+      <div class="contact-info">
+
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">📍</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Dirección</div>
+            Carretera Principal KM 243, México
+          </div>
+        </div>
+
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">📱</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">WhatsApp / Teléfono</div>
+            <a href="https://wa.me/528134214402" target="_blank" rel="noopener" style="color:var(--rojo); font-weight:700; text-decoration:none;">
+              813 421 4402
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">🕐</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Horario</div>
+            Lun–Vie: 12pm–11pm · Sáb–Dom: 11am–12am
+          </div>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">📲</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Síguenos</div>
+            <div class="social-links">
+              <a href="https://www.instagram.com/taqueria_km243/" target="_blank" rel="noopener" class="social-link social-ig" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                Instagram
+              </a>
+              <a href="https://www.facebook.com/share/1W7cDihqC1/" target="_blank" rel="noopener" class="social-link social-fb" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                Facebook
+              </a>
+              <a href="https://www.tiktok.com/@km.2432" target="_blank" rel="noopener" class="social-link social-tt" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                TikTok
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mapa Google -->
+      <div class="contact-map sticker-lg">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.5!2d-100.1146182!3d25.3834081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662cd004de0f717%3A0xdf77c3af2f9b47f9!2sTaqueria+KM+243!5e0!3m2!1ses!2smx!4v1"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación Taquería KM 243"
+        ></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     FOOTER
+================================ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand-wrap">
+      <img src="taqueria.png" alt="Logo Taquería KM 243" />
+      <div>
+        <div class="footer-brand">Taquería KM 243</div>
+        <p class="footer-tagline">El sabor de la carretera. Desde siempre para siempre.</p>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <ul class="footer-links">
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#beneficios">Nosotros</a></li>
+        <li><a href="#servicios">Horarios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://maps.app.goo.gl/2gXUcQhJ2XKgs52S8" target="_blank" rel="noopener">Ubicación</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/taqueria_km243/" target="_blank" rel="noopener" class="footer-social-icon footer-social-ig" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/1W7cDihqC1/" target="_blank" rel="noopener" class="footer-social-icon footer-social-fb" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@km.2432" target="_blank" rel="noopener" class="footer-social-icon footer-social-tt" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+        <a href="https://wa.me/528134214402" target="_blank" rel="noopener" class="footer-social-icon footer-social-wa" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.523 5.82L.057 23.862l6.197-1.427A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.626 0 11.999 0zm.001 21.818a9.801 9.801 0 01-4.99-1.366l-.358-.213-3.677.846.873-3.576-.233-.368A9.818 9.818 0 012.18 12C2.18 6.57 6.57 2.18 12 2.18c5.43 0 9.818 4.39 9.818 9.82 0 5.43-4.39 9.818-9.818 9.818z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="footer-copy">© 2024 Taquería KM 243. Todos los derechos reservados. Hecho con 🌮 y mucho amor.</p>
+  </div>
+</footer>
+
+<!-- ================================
+     BOTÓN WHATSAPP FLOTANTE
+================================ -->
+<a
+  href="https://wa.me/528134214402?text=¡Hola!%20Quiero%20hacer%20mi%20pedido%20en%20Taquería%20KM%20243%20🌮"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="wa-float"
+  aria-label="Contactar por WhatsApp"
+>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.523 5.82L.057 23.862l6.197-1.427A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.626 0 11.999 0zm.001 21.818a9.801 9.801 0 01-4.99-1.366l-.358-.213-3.677.846.873-3.576-.233-.368A9.818 9.818 0 012.18 12C2.18 6.57 6.57 2.18 12 2.18c5.43 0 9.818 4.39 9.818 9.82 0 5.43-4.39 9.818-9.818 9.818z"/>
+  </svg>
+  ¡Pedir Ahora!
+</a>
+
+<!-- Anime.js desde CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<!-- Lógica & animaciones -->
+<script src="main.js"></script>
+
+</body>
+</html>
