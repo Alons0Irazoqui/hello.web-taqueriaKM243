@@ -564,6 +564,13 @@ h1, h2, h3, h4 {
   color: var(--rojo);
 }
 
+/* Sección menú de la tarde */
+.section-menu-tarde {
+  background: var(--gris-calido);
+  border-top: 4px solid var(--rojo);
+  padding-top: 80px;
+}
+
 /* Filtros */
 .menu-filters {
   display: flex;
@@ -1225,4 +1232,118 @@ footer {
   .services-inner { grid-template-columns: 1fr 1fr; }
   .footer-inner { flex-direction: row; align-items: center; justify-content: space-between; }
   .footer-copy { border-top: none; padding-top: 0; }
+}
+
+/* ============================================
+   SELECTOR DE MENÚ (turno)
+   ============================================ */
+.section-hidden { display: none !important; }
+
+.menu-turno-switcher {
+  background: var(--crema);
+  padding: 56px 24px 44px;
+  text-align: center;
+  border-bottom: 3px solid rgba(61,28,2,.08);
+}
+.menu-turno-pregunta {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  font-weight: 800;
+  color: var(--cafe);
+  margin-bottom: 24px;
+}
+.menu-turno-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.menu-turno-btn {
+  padding: 13px 38px;
+  border-radius: 50px;
+  border: 2.5px solid var(--rojo);
+  background: transparent;
+  color: var(--rojo);
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .22s, color .22s, transform .18s;
+}
+.menu-turno-btn:hover { transform: translateY(-2px); }
+.menu-turno-btn.active,
+.menu-turno-btn:focus {
+  background: var(--rojo);
+  color: #fff;
+}
+
+/* ============================================
+   HORARIOS — filas especiales
+   ============================================ */
+.horarios-row.cerrado .hora { color: var(--rojo); font-weight: 700; }
+.horarios-row.doble .hora { line-height: 1.7; }
+
+/* ============================================
+   ÁREA RECREATIVA / KIDS
+   ============================================ */
+.section-kids {
+  background: linear-gradient(135deg, #B91C1C 0%, #7F1D1D 100%);
+  padding: 100px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.section-kids::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.3;
+  pointer-events: none;
+}
+.kids-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.kids-text .section-title { color: #fff; }
+.kids-text .section-tag { display: inline-block; margin-bottom: 0; }
+.kids-desc {
+  color: rgba(255,255,255,.88);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin: 20px 0 24px;
+}
+.kids-desc strong { color: #FCD34D; }
+.kids-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.kids-features li {
+  color: rgba(255,255,255,.9);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.kids-img img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  height: 580px;
+  box-shadow: 0 24px 64px rgba(0,0,0,.35);
+  display: block;
+}
+@media (max-width: 768px) {
+  .kids-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .kids-img { order: -1; }
 }

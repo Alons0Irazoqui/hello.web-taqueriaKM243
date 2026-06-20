@@ -205,8 +205,7 @@ const menuObserver = new IntersectionObserver((entries) => {
     menuObserver.unobserve(entry.target);
   });
 }, { threshold: 0.05 });
-const menuGrid = document.querySelector('.menu-grid');
-if (menuGrid) menuObserver.observe(menuGrid);
+document.querySelectorAll('.menu-grid').forEach(grid => menuObserver.observe(grid));
 
 /* ---- BENEFICIOS ---- */
 const benefitsObserver = new IntersectionObserver((entries) => {
@@ -275,28 +274,50 @@ document.querySelectorAll('.menu-card').forEach(card => {
   });
 });
 
-/* ---- FILTROS DE MENÚ ---- */
-const filters = document.querySelectorAll('.menu-filter');
-const cards   = document.querySelectorAll('.menu-card');
+/* ---- SELECTOR DE TURNO (matutino / tarde) ---- */
+const sectionMatutino = document.getElementById('section-matutino');
+const sectionTarde    = document.getElementById('menu-tarde');
 
-filters.forEach(btn => {
+document.querySelectorAll('.menu-turno-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    filters.forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.menu-turno-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    if (btn.dataset.turno === 'matutino') {
+      sectionMatutino?.classList.remove('section-hidden');
+      sectionTarde?.classList.add('section-hidden');
+    } else {
+      sectionTarde?.classList.remove('section-hidden');
+      sectionMatutino?.classList.add('section-hidden');
+    }
+  });
+});
 
-    const cat = btn.dataset.cat;
-    cards.forEach(card => {
-      card.classList.toggle('hidden', cat !== 'all' && card.dataset.cat !== cat);
-    });
+/* ---- FILTROS DE MENÚ (independientes por sección) ---- */
+document.querySelectorAll('.menu-filters').forEach(filterGroup => {
+  const parentSection = filterGroup.closest('.section-menu');
+  const sectionCards  = parentSection ? parentSection.querySelectorAll('.menu-card') : [];
 
-    const visible = [...cards].filter(c => !c.classList.contains('hidden'));
-    anime({
-      targets: visible,
-      scale:   [0.92, 1],
-      opacity: [0, 1],
-      duration: 400,
-      delay: anime.stagger(60),
-      easing: 'easeOutBack',
+  filterGroup.querySelectorAll('.menu-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterGroup.querySelectorAll('.menu-filter').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cat = btn.dataset.cat;
+      sectionCards.forEach(card => {
+        card.classList.toggle('hidden', cat !== 'all' && card.dataset.cat !== cat);
+      });
+
+      const visible = [...sectionCards].filter(c => !c.classList.contains('hidden'));
+      if (visible.length) {
+        anime({
+          targets: visible,
+          scale:   [0.92, 1],
+          opacity: [0, 1],
+          duration: 400,
+          delay: anime.stagger(50),
+          easing: 'easeOutBack',
+        });
+      }
     });
   });
 });

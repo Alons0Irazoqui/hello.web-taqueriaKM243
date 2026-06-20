@@ -161,17 +161,255 @@
 </div>
 
 <!-- ================================
-     MENÚ
+     ÁREA RECREATIVA
 ================================ -->
-<section class="section-menu" id="menu">
+<section class="section-kids" id="kids">
+  <div class="kids-inner">
+    <div class="kids-text reveal fade-left">
+      <div class="section-tag" style="background:#FCD34D;color:#1C1001;">🎡 ¡Para toda la familia!</div>
+      <br/><br/>
+      <h2 class="section-title section-title-invert">Área Recreativa<br/>Para los Peques</h2>
+      <p class="kids-desc">Sabemos que los momentos en familia son los más especiales. Por eso contamos con un <strong>área de juegos</strong> donde los más chiquitos se divierten mientras tú disfrutas tu taco favorito. ¡Diversión y sabor en un solo lugar!</p>
+      <ul class="kids-features">
+        <li>🎠 Juegos para niños seguros y divertidos</li>
+        <li>👨‍👩‍👧‍👦 Espacio pensado para toda la familia</li>
+        <li>🛡️ Ambiente vigilado y tranquilo</li>
+        <li>😊 ¡Niños felices, papás felices!</li>
+      </ul>
+      <a href="https://wa.me/528134214402?text=¡Hola!%20Quiero%20más%20info%20del%20área%20de%20juegos%20🎡" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:28px; display:inline-flex;">
+        ¡Visítanos con tu Familia! 🎉
+      </a>
+    </div>
+    <div class="kids-img reveal fade-right">
+      <img src="IMG/juegos.jpeg" alt="Área de juegos para niños — Taquería KM 243" />
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     SELECTOR DE MENÚ
+================================ -->
+<div class="menu-turno-switcher" id="menu">
+  <p class="menu-turno-pregunta">¿Qué menú deseas ver?</p>
+  <div class="menu-turno-btns">
+    <button class="menu-turno-btn active" data-turno="matutino">🌅 Matutino</button>
+    <button class="menu-turno-btn" data-turno="tarde">🌆 Tarde</button>
+  </div>
+</div>
+
+<!-- ================================
+     MENÚ MATUTINO
+================================ -->
+<section class="section-menu" id="section-matutino">
   <div class="section-header">
-    <div class="section-tag">🌮 Lo que tenemos para ti</div>
+    <div class="section-tag">🌅 De 8:00 am a 2:00 pm</div>
     <br/><br/>
-    <h2 class="section-title">Nuestro Menú</h2>
+    <h2 class="section-title">Menú Matutino</h2>
   </div>
 
-  <!-- Filtros de categoría -->
-  <div class="menu-filters reveal fade-up">
+  <div class="menu-filters reveal fade-up" data-section="matutino">
+    <button class="menu-filter active" data-cat="all">🍽️ Todo</button>
+    <button class="menu-filter" data-cat="taquitos">🌮 Taquitos</button>
+    <button class="menu-filter" data-cat="platillos">🍳 Platillos</button>
+  </div>
+
+  <div class="menu-grid" data-section="matutino">
+
+    <!-- ===========================
+         MENÚ MATUTINO — TAQUITOS
+    =========================== -->
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.08 PM (2).jpeg" alt="Taquito de Barbacoa" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Barbacoa</h3>
+        <p class="menu-card-desc">Barbacoa suave y jugosa en tortilla recién hecha. El desayuno que da energía para todo el día.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.06s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.14 PM (3).jpeg" alt="Taquito de Machacado" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Machacado</h3>
+        <p class="menu-card-desc">Carne seca deshebrada y guisada al estilo norteño. Sabor inconfundible de la mañana.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.12s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.10 PM (1).jpeg" alt="Taquito Deshebrada" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Deshebrada</h3>
+        <p class="menu-card-desc">Carne deshebrada con el guiso perfecto. Una opción clásica y reconfortante.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.18s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.08 PM.jpeg" alt="Taquito Chicharrón" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Chicharrón</h3>
+        <p class="menu-card-desc">Chicharrón guisado en salsa, crujiente y lleno de sabor en tortilla fresca.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.24s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.08 PM (2).jpeg" alt="Taquito Guisado Verde" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Guisado Verde</h3>
+        <p class="menu-card-desc">Guisado de res en salsa verde tatemada. Casero y reconfortante, como en casa.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.30s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.14 PM (3).jpeg" alt="Taquito Picadillo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Picadillo</h3>
+        <p class="menu-card-desc">Carne molida con papa y chile al gusto. El clásico matutino que nunca falla.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.36s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.10 PM (1).jpeg" alt="Taquito Bistec Ranchero" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Bistec Ranchero</h3>
+        <p class="menu-card-desc">Bistec en salsa ranchera con cebolla y chile. El favorito de la mañana del KM 243.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.42s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.08 PM.jpeg" alt="Taquito Asado" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Asado</h3>
+        <p class="menu-card-desc">Carne asada jugosa en tortilla calientita. Sencillo, directo y delicioso.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.48s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.08 PM (2).jpeg" alt="Taquito Chile de Queso y Carne" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Chile de Queso y Carne</h3>
+        <p class="menu-card-desc">Chile poblano con queso derretido y carne. Una combinación que enamora desde la primera mordida.</p>
+        <div class="menu-card-price">$30</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.54s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.14 PM (3).jpeg" alt="Taquito Manitas Lampriadas" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Manitas Lampriadas</h3>
+        <p class="menu-card-desc">Manitas de cerdo en salsa especial. El taquito más tradicional del menú matutino.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.60s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.10 PM (1).jpeg" alt="Taquito Huevo con Jamón" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Huevo con Jamón</h3>
+        <p class="menu-card-desc">Huevo revuelto con jamón en tortilla caliente. El desayuno clásico que nunca decepciona.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.66s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.08 PM.jpeg" alt="Taquito Cortadillo de Puerco" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Cortadillo de Puerco</h3>
+        <p class="menu-card-desc">Puerco guisado en trozos con chile y especias. Sabor intenso y muy reconfortante.</p>
+        <div class="menu-card-price">$26</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="taquitos" data-turno="matutino" style="transition-delay:.72s">
+      <img src="comida (9).jpg" alt="Taquito Carne Asada" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Taquitos</span>
+        <h3 class="menu-card-name">Carne Asada</h3>
+        <p class="menu-card-desc">Carne asada cortada en tortilla fresca. El taquito mañanero que nunca sale del menú.</p>
+        <div class="menu-card-price">$30</div>
+      </div>
+    </article>
+
+    <!-- ===========================
+         MENÚ MATUTINO — PLATILLOS
+    =========================== -->
+
+    <article class="menu-card reveal fade-up" data-cat="platillos" data-turno="matutino">
+      <img src="comida (2).jpg" alt="Huevos al Gusto" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Platillos</span>
+        <h3 class="menu-card-name">Huevos al Gusto</h3>
+        <p class="menu-card-desc">Acompañados de Tortilla, jamón, huevo y frijoles refritos. El desayuno más completo.</p>
+        <div class="menu-card-price">$80</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="platillos" data-turno="matutino" style="transition-delay:.08s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.08 PM (2).jpeg" alt="Omelet Jamón y Queso" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Platillos</span>
+        <h3 class="menu-card-name">Omelet Jamón y Queso</h3>
+        <p class="menu-card-desc">Jamón, queso y frijoles refritos. El omelet perfecto para arrancar el día con todo.</p>
+        <div class="menu-card-price">$90</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="platillos" data-turno="matutino" style="transition-delay:.16s">
+      <img src="comida (4).jpg" alt="Pay Limón y Mango" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Postre</span>
+        <h3 class="menu-card-name">Pay Limón y Mango</h3>
+        <p class="menu-card-desc">El postre perfecto para cerrar el desayuno. Fresco, cremoso y delicioso.</p>
+        <div class="menu-card-price">$35</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="platillos" data-turno="matutino" style="transition-delay:.24s">
+      <img src="comida (1).jpg" alt="Menudo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Solo Sáb y Dom</span>
+        <h3 class="menu-card-name">Menudo</h3>
+        <p class="menu-card-desc">El remedio perfecto para los fines de semana. Disponible solo Sábados y Domingos.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">$130</span>
+          <span class="menu-card-price-alt">1 Litro $250</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================================
+     MENÚ DE LA TARDE
+================================ -->
+<section class="section-menu section-menu-tarde section-hidden" id="menu-tarde">
+  <div class="section-header">
+    <div class="section-tag">🌆 Desde el mediodía hasta el cierre</div>
+    <br/><br/>
+    <h2 class="section-title">Menú de la Tarde</h2>
+  </div>
+
+  <div class="menu-filters reveal fade-up" data-section="tarde">
     <button class="menu-filter active" data-cat="all">🍽️ Todo</button>
     <button class="menu-filter" data-cat="tacos">🌮 Tacos</button>
     <button class="menu-filter" data-cat="especialidades">⭐ Especialidades</button>
@@ -180,9 +418,12 @@
     <button class="menu-filter" data-cat="extras">🍟 Extras</button>
   </div>
 
-  <div class="menu-grid">
+  <div class="menu-grid" data-section="tarde">
 
-    <!-- TACOS -->
+    <!-- ===========================
+         TACOS
+    =========================== -->
+
     <article class="menu-card reveal fade-up" data-cat="tacos">
       <img src="comida (9).jpg" alt="Taco Individual" class="menu-card-img" />
       <div class="menu-card-body">
@@ -196,7 +437,7 @@
       </div>
     </article>
 
-    <article class="menu-card reveal fade-up" data-cat="tacos" style="transition-delay:.08s">
+    <article class="menu-card reveal fade-up" data-cat="tacos" data-turno="tarde" style="transition-delay:.08s">
       <img src="comida (2).jpg" alt="Orden de Tacos" class="menu-card-img" />
       <div class="menu-card-body">
         <span class="menu-card-label">Tacos</span>
@@ -209,8 +450,24 @@
       </div>
     </article>
 
-    <!-- ESPECIALIDADES -->
-    <article class="menu-card reveal fade-up" data-cat="especialidades" style="transition-delay:.16s">
+    <article class="menu-card reveal fade-up" data-cat="tacos" data-turno="tarde" style="transition-delay:.16s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.10 PM (1).jpeg" alt="Orden de Tacos Arrachera" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Tacos</span>
+        <h3 class="menu-card-name">Orden Tacos Arrachera</h3>
+        <p class="menu-card-desc">Arrachera suave y jugosa en tortilla. El corte premium que se convierte en taco perfecto.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">$160</span>
+          <span class="menu-card-price-alt">Con queso $170</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===========================
+         MENÚ DE LA TARDE — ESPECIALIDADES
+    =========================== -->
+
+    <article class="menu-card reveal fade-up" data-cat="especialidades" data-turno="tarde">
       <img src="comida (3).jpg" alt="Gringa" class="menu-card-img" />
       <div class="menu-card-body">
         <span class="menu-card-label menu-card-label--dorado">Especialidades</span>
@@ -220,7 +477,7 @@
       </div>
     </article>
 
-    <article class="menu-card reveal fade-up" data-cat="especialidades" style="transition-delay:.24s">
+    <article class="menu-card reveal fade-up" data-cat="especialidades" data-turno="tarde" style="transition-delay:.08s">
       <img src="comida (1).jpg" alt="Campechana" class="menu-card-img" />
       <div class="menu-card-body">
         <span class="menu-card-label menu-card-label--dorado">Especialidades</span>
@@ -230,7 +487,7 @@
       </div>
     </article>
 
-    <article class="menu-card reveal fade-up" data-cat="especialidades" style="transition-delay:.32s">
+    <article class="menu-card reveal fade-up" data-cat="especialidades" data-turno="tarde" style="transition-delay:.16s">
       <img src="comida (6).jpg" alt="Pirata" class="menu-card-img" />
       <div class="menu-card-body">
         <span class="menu-card-label menu-card-label--dorado">Especialidades</span>
@@ -240,18 +497,61 @@
       </div>
     </article>
 
-    <!-- HAMBURGUESAS -->
-    <article class="menu-card reveal fade-up" data-cat="hamburguesas" style="transition-delay:.08s">
-      <img src="comida (7).jpg" alt="Hamburguesa Doble Todo" class="menu-card-img" />
+    <article class="menu-card reveal fade-up" data-cat="especialidades" data-turno="tarde" style="transition-delay:.24s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.07 PM.jpeg" alt="Tostada Kike" class="menu-card-img" />
       <div class="menu-card-body">
-        <span class="menu-card-label menu-card-label--cafe">Hamburguesas</span>
-        <h3 class="menu-card-name">Hamburguesa Doble Todo</h3>
-        <p class="menu-card-desc">Doble carne, doble queso, tocino, jamón, chile y todas las salsas. La más bestia del menú.</p>
-        <div class="menu-card-price">$185</div>
+        <span class="menu-card-label menu-card-label--dorado">Especialidades</span>
+        <h3 class="menu-card-name">Tostada Kike</h3>
+        <p class="menu-card-desc">Carne Asada, Queso, Aguacate y Papas. La tostada favorita del local.</p>
+        <div class="menu-card-price">$50</div>
       </div>
     </article>
 
-    <article class="menu-card reveal fade-up" data-cat="hamburguesas" style="transition-delay:.16s">
+    <article class="menu-card reveal fade-up" data-cat="especialidades" data-turno="tarde" style="transition-delay:.32s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.07 PM.jpeg" alt="Tostada Arrachera" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Especialidades</span>
+        <h3 class="menu-card-name">Tostada Arrachera</h3>
+        <p class="menu-card-desc">Arrachera, Queso, Aguacate y Papas sobre tostada crujiente. El upgrade que mereces.</p>
+        <div class="menu-card-price">$70</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="especialidades" data-turno="tarde" style="transition-delay:.40s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.14 PM (1).jpeg" alt="Alambre" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Especialidades</span>
+        <h3 class="menu-card-name">Alambre</h3>
+        <p class="menu-card-desc">Carne, Queso, Chile Morrón Verde y Rojo, Champiñones y Cebolla. Un hit del lugar.</p>
+        <div class="menu-card-price">$140</div>
+      </div>
+    </article>
+
+    <!-- ===========================
+         MENÚ DE LA TARDE — HAMBURGUESAS
+    =========================== -->
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.09 PM.jpeg" alt="Hamburguesa Junior" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesas</span>
+        <h3 class="menu-card-name">Hamburguesa Junior</h3>
+        <p class="menu-card-desc">Carne de Res, Aguacate, Jamón, Tomate, Queso, Salami y Lechuga (130 grs). Incluye papas.</p>
+        <div class="menu-card-price">$115</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.08s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.10 PM.jpeg" alt="Hamburguesa de Res" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesas</span>
+        <h3 class="menu-card-name">Hamburguesa de Res</h3>
+        <p class="menu-card-desc">Carne de Res, Queso, Salami, Jamón, Tomate, Lechuga y Aguacate (200 grs). Incluye papas.</p>
+        <div class="menu-card-price">$140</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.16s">
       <img src="comida (10).jpg" alt="Hamburguesa de Pollo" class="menu-card-img" />
       <div class="menu-card-body">
         <span class="menu-card-label menu-card-label--cafe">Hamburguesas</span>
@@ -261,8 +561,101 @@
       </div>
     </article>
 
-    <!-- BURRITOS -->
-    <article class="menu-card reveal fade-up" data-cat="burritos" style="transition-delay:.08s">
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.24s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.14 PM.jpeg" alt="Hamburguesa Doble Carne" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesas</span>
+        <h3 class="menu-card-name">Hamburguesa Doble Carne</h3>
+        <p class="menu-card-desc">Doble Carne, Queso, Aguacate, Tomate, Lechuga, Salami y Jamón (400 grs). Incluye papas.</p>
+        <div class="menu-card-price">$170</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.32s">
+      <img src="comida (7).jpg" alt="Hamburguesa Doble de Todo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesas</span>
+        <h3 class="menu-card-name">Hamburguesa Doble de Todo</h3>
+        <p class="menu-card-desc">Doble carne, doble queso, tocino, jamón, chile y todas las salsas. La más bestia del menú.</p>
+        <div class="menu-card-price">$185</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.40s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.09 PM (1).jpeg" alt="Salchiburger" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesas</span>
+        <h3 class="menu-card-name">Salchiburger</h3>
+        <p class="menu-card-desc">Carne, Salchicha, Jamón, Aguacate, Tomate, Salami, Queso y Lechuga. Incluye papas.</p>
+        <div class="menu-card-price">$165</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.48s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.09 PM (1).jpeg" alt="Hamburguesa Res y Pollo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesa Mixta</span>
+        <h3 class="menu-card-name">Res y Pollo</h3>
+        <p class="menu-card-desc">Res, Pollo, Queso, Aguacate, Jamón, Tomate, Salami y Lechuga. Incluye papas.</p>
+        <div class="menu-card-price">$185</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.56s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.14 PM.jpeg" alt="Hamburguesa Asada y Pollo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesa Mixta</span>
+        <h3 class="menu-card-name">Asada y Pollo</h3>
+        <p class="menu-card-desc">Carne Asada, Pollo, Queso, Salami, Jamón, Tomate y Lechuga. Incluye papas.</p>
+        <div class="menu-card-price">$185</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.64s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.10 PM.jpeg" alt="Hamburguesa Res y Asada" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesa Mixta</span>
+        <h3 class="menu-card-name">Res y Asada</h3>
+        <p class="menu-card-desc">Res, Carne Asada, Queso, Jamón, Salami, Tomate y Lechuga. Incluye papas.</p>
+        <div class="menu-card-price">$185</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.72s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.09 PM (1).jpeg" alt="Hamburguesa Trompo y Pollo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesa Mixta</span>
+        <h3 class="menu-card-name">Trompo y Pollo</h3>
+        <p class="menu-card-desc">Trompo, Pollo, Queso, Jamón, Salami, Tomate y Lechuga. Incluye papas.</p>
+        <div class="menu-card-price">$180</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.80s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.10 PM.jpeg" alt="Hamburguesa Res y Trompo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesa Mixta</span>
+        <h3 class="menu-card-name">Res y Trompo</h3>
+        <p class="menu-card-desc">Res, Trompo, Queso, Jamón, Salami, Tomate y Lechuga. Incluye papas.</p>
+        <div class="menu-card-price">$175</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="hamburguesas" data-turno="tarde" style="transition-delay:.88s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.14 PM.jpeg" alt="Hamburguesa Carnes Asada y Trompo" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Hamburguesa Mixta</span>
+        <h3 class="menu-card-name">Carnes Asada y Trompo</h3>
+        <p class="menu-card-desc">Carne Asada, Trompo, Queso, Jamón, Salami, Tomate y Lechuga. Incluye papas.</p>
+        <div class="menu-card-price">$165</div>
+      </div>
+    </article>
+
+    <!-- ===========================
+         MENÚ DE LA TARDE — BURRITOS
+    =========================== -->
+
+    <article class="menu-card reveal fade-up" data-cat="burritos" data-turno="tarde">
       <img src="comida (8).jpg" alt="Burrito de Trompo" class="menu-card-img" />
       <div class="menu-card-body">
         <span class="menu-card-label">Burritos</span>
@@ -272,8 +665,71 @@
       </div>
     </article>
 
-    <!-- EXTRAS -->
-    <article class="menu-card reveal fade-up" data-cat="extras" style="transition-delay:.08s">
+    <article class="menu-card reveal fade-up" data-cat="burritos" data-turno="tarde" style="transition-delay:.08s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.12 PM (4).jpeg" alt="Burrito de Carne Asada" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Burritos</span>
+        <h3 class="menu-card-name">Burrito de Carne Asada</h3>
+        <p class="menu-card-desc">Carne Asada, Queso, Aguacate y Papas. El burrito que te llena de verdad.</p>
+        <div class="menu-card-price">$140</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="burritos" data-turno="tarde" style="transition-delay:.16s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.13 PM.jpeg" alt="Burrito Mixto" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Burritos</span>
+        <h3 class="menu-card-name">Burrito Mixto</h3>
+        <p class="menu-card-desc">Trompo, Carne Asada, Queso, Aguacate y Papas. Lo mejor de dos mundos en uno.</p>
+        <div class="menu-card-price">$140</div>
+      </div>
+    </article>
+
+    <!-- ===========================
+         MENÚ DE LA TARDE — EXTRAS
+    =========================== -->
+
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.14 PM (2).jpeg" alt="Papa Asada Sencilla" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Papa Asada</span>
+        <h3 class="menu-card-name">Papa Asada Sencilla</h3>
+        <p class="menu-card-desc">Queso Asadero, Queso Cheddar, Mantequilla y Crema. Sencilla pero absolutamente deliciosa.</p>
+        <div class="menu-card-price">$120</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.08s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.08 PM (3).jpeg" alt="Papa Asada Con Carne Asada" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Papa Asada</span>
+        <h3 class="menu-card-name">Papa Con Carne Asada</h3>
+        <p class="menu-card-desc">Queso Asadero, Queso Cheddar, Mantequilla, Crema y Carne Asada. La estrella de las papas.</p>
+        <div class="menu-card-price">$140</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.16s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.14 PM (2).jpeg" alt="Papa Asada Mixta" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Papa Asada</span>
+        <h3 class="menu-card-name">Papa Asada Mixta</h3>
+        <p class="menu-card-desc">Queso Asadero, Cheddar, Mantequilla, Crema, Carne Asada y Trompo. Doble sabor.</p>
+        <div class="menu-card-price">$150</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.24s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.08 PM (3).jpeg" alt="Papa Asada Mixta 3 Carnes" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Papa Asada</span>
+        <h3 class="menu-card-name">Papa Mixta 3 Carnes</h3>
+        <p class="menu-card-desc">Queso Asadero, Cheddar, Mantequilla, Crema, Carne Asada, Trompo y Arrachera. La deluxe.</p>
+        <div class="menu-card-price">$170</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.32s">
       <img src="comida (11).jpg" alt="Papa Asada Especial Extra" class="menu-card-img" />
       <div class="menu-card-body">
         <span class="menu-card-label menu-card-label--dorado">Papa Asada</span>
@@ -283,7 +739,7 @@
       </div>
     </article>
 
-    <article class="menu-card reveal fade-up" data-cat="extras" style="transition-delay:.16s">
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.40s">
       <img src="comida (4).jpg" alt="Papas Especiales" class="menu-card-img" />
       <div class="menu-card-body">
         <span class="menu-card-label menu-card-label--dorado">Papas a la Francesa</span>
@@ -296,19 +752,81 @@
       </div>
     </article>
 
-    <article class="menu-card reveal fade-up" data-cat="extras" style="transition-delay:.24s">
-      <img src="comida (5).jpg" alt="Alitas" class="menu-card-img" />
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.48s">
+      <img src="comida (11).jpg" alt="Papas Especiales Con Carne" class="menu-card-img" />
       <div class="menu-card-body">
-        <span class="menu-card-label menu-card-label--cafe">Alitas / Boneless</span>
-        <h3 class="menu-card-name">Alitas o Boneless</h3>
-        <p class="menu-card-desc">Crujientes y bañadas en salsa. ¡Para compartir o para no compartir, eso es decisión tuya!</p>
+        <span class="menu-card-label menu-card-label--dorado">Papas a la Francesa</span>
+        <h3 class="menu-card-name">Papas Especiales Con Carne</h3>
+        <p class="menu-card-desc">Papas doradas con carne asada y queso. El upgrade que tu antojo merece.</p>
+        <div class="menu-card-price">$120</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.56s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.11 PM.jpeg" alt="Alitas" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Alitas</span>
+        <h3 class="menu-card-name">Alitas</h3>
+        <p class="menu-card-desc">Crujientes y bañadas en salsa. Con Papas, Apio, Zanahoria y Aderezo Ranch.</p>
         <div class="menu-card-price-row">
-          <span class="menu-card-price">desde $120</span>
-          <span class="menu-card-price-alt">500g desde $190</span>
+          <span class="menu-card-price">$120</span>
+          <span class="menu-card-price-alt">500g $190</span>
         </div>
       </div>
     </article>
 
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.64s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.12 PM.jpeg" alt="Boneless" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--cafe">Boneless</span>
+        <h3 class="menu-card-name">Boneless</h3>
+        <p class="menu-card-desc">Boneless crujientes con salsa especial. Con Papas, Apio, Zanahoria y Aderezo Ranch.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">$130</span>
+          <span class="menu-card-price-alt">500g $200</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.72s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.12 PM (2).jpeg" alt="Dedos de Queso" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Extras</span>
+        <h3 class="menu-card-name">Dedos de Queso</h3>
+        <p class="menu-card-desc">Papas, Apio, Zanahoria y Aderezo Ranch. El snack que todos terminan pidiendo.</p>
+        <div class="menu-card-price">$110</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.80s">
+      <img src="IMG/WhatsApp Image 2026-06-19 at 6.03.09 PM.jpeg" alt="Salchicha Preparada" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Extras</span>
+        <h3 class="menu-card-name">Salchicha Preparada</h3>
+        <p class="menu-card-desc">Jamón, Salami, Queso, Aguacate y Papas. El complemento perfecto de tu orden.</p>
+        <div class="menu-card-price">$60</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.88s">
+      <img src="comida (5).jpg" alt="Frijoles Charros Sencillos" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Entradas</span>
+        <h3 class="menu-card-name">Frijoles Charros Sencillos</h3>
+        <p class="menu-card-desc">Frijoles charros caseros. El acompañamiento ideal para cualquier platillo de la tarde.</p>
+        <div class="menu-card-price">$30</div>
+      </div>
+    </article>
+
+    <article class="menu-card reveal fade-up" data-cat="extras" data-turno="tarde" style="transition-delay:.96s">
+      <img src="comida (6).jpg" alt="Frijoles Charros Especial" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Entradas</span>
+        <h3 class="menu-card-name">Frijoles Charros Especial</h3>
+        <p class="menu-card-desc">Con Carne Asada y Queso. Los frijoles que se convierten en protagonistas del plato.</p>
+        <div class="menu-card-price">$50</div>
+      </div>
+    </article>
 
   </div>
 </section>
@@ -413,17 +931,21 @@
           <span>Día</span>
           <span>Horario</span>
         </div>
-        <div class="horarios-row">
-          <span class="dia">Lunes — Viernes</span>
-          <span class="hora">12:00 pm — 11:00 pm</span>
+        <div class="horarios-row cerrado">
+          <span class="dia">Lunes</span>
+          <span class="hora">Cerrado</span>
         </div>
         <div class="horarios-row">
-          <span class="dia">Sábado</span>
-          <span class="hora">11:00 am — 12:00 am</span>
+          <span class="dia">Martes — Miércoles</span>
+          <span class="hora">6:00 pm — 11:59 pm</span>
         </div>
-        <div class="horarios-row">
-          <span class="dia">Domingo</span>
-          <span class="hora">11:00 am — 10:00 pm</span>
+        <div class="horarios-row doble">
+          <span class="dia">Jueves — Viernes</span>
+          <span class="hora">8:00 am – 2:00 pm<br/>6:00 pm – 11:59 pm</span>
+        </div>
+        <div class="horarios-row doble">
+          <span class="dia">Sábado — Domingo</span>
+          <span class="hora">8:00 am – 2:00 pm<br/>6:00 pm – 11:59 pm</span>
         </div>
         <div class="horarios-row" style="background:#FEF3C7; font-size:.85rem; color:#78350F;">
           <span>⚡ ¡Sin reservación!</span>
@@ -587,7 +1109,7 @@
           <span class="contact-info-icon">🕐</span>
           <div class="contact-info-text">
             <div class="contact-info-label">Horario</div>
-            Lun–Vie: 12pm–11pm · Sáb–Dom: 11am–12am
+            Mar–Mié: 6pm–12am · Jue–Dom: 8am–2pm y 6pm–12am · Lun: Cerrado
           </div>
         </div>
 
